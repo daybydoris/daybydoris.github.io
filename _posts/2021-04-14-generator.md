@@ -8,13 +8,6 @@ description: JavaScript ES6의 Generator에 대해 알아봅시다.
 
 
 
-
-
-
-
-
-
-
 # 제너레이터
 
 일반 함수는 하나의 값(혹은 0개)만을 반환한다.
