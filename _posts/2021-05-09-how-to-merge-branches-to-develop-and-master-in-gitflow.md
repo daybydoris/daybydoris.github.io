@@ -13,7 +13,7 @@ description: feature 브랜치를 develop과 master에 merge하기 (gitflow)
 
 최신 develop에서 feature 따기
 
-```json
+```javascript
 $ git checkout develop // develop으로 이동
 $ git checkout -b "feature/브랜치 이름" // 새 feature 브랜치를 만들고 이동
 ```
@@ -38,7 +38,7 @@ default를 바꿔도 되는지 모르겠음.
 
 develop 최신화 해줌
 
-```json
+```javascript
 $ git checkout develop // develop으로 이동
 $ git pull origin develop // merge한 것을 pull 받음
 ```
@@ -49,7 +49,7 @@ $ git pull origin develop // merge한 것을 pull 받음
 
 ## 3. develop에서 pull 받고 master에 배포하기
 
-```json
+```javascript
 $ git checkout master // master로 이동
 $ git pull origin develop // 최신화 된 develop을 pull 받음
 $ git push origin master // master에 push
