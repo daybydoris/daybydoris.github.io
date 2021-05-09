@@ -1,7 +1,7 @@
 ---
 title: feature 브랜치를 develop과 master에 merge하기 (gitflow)
 date: 2021-05-09 14:31:00 +09:00
-tags: [git, gitflow]]
+tags: [git, gitflow]
 description: feature 브랜치를 develop과 master에 merge하기 (gitflow)
 ---
 
