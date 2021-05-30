@@ -32,7 +32,7 @@ collections:
     output: true
 
 # Markdown settings
-markdown: CommonMark
+markdown: CommonMarkGhPages
 highlighter: rouge
 # kramdown:
 #   syntax_highlighter: rouge
