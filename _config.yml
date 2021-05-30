@@ -33,7 +33,10 @@ collections:
 
 # Markdown settings
 markdown: CommonMarkGhPages
-highlighter: rouge
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+# highlighter: rouge
 # kramdown:
 #   syntax_highlighter: rouge
 
