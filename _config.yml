@@ -84,7 +84,7 @@ exclude:
   - lighthouse.png
   - klise-*.gem
   - klise.gemspec
-  - vendor
+  - vendor/bundle/ruby/2.6.0
 
 # Plugins
 plugins:

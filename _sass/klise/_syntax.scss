@@ -9,6 +9,11 @@ code {
   word-break: normal;
   word-wrap: normal;
   font-size: inherit;
+  border: 1px solid #ececec;
+  background: #fff;
+  color: #ff5277;
+  padding: 0 4px;
+  border-radius: 5px;
 
   &.highlighter-rouge {
     padding: 1px 3px;
@@ -22,13 +27,13 @@ code {
 
 // Codeblock Theme
 pre.highlight, pre {
-  margin: 0 -27px;
+  // margin: 0 -27px;
   @include media-query($on-mobile) {
-    margin: 0 calc(51% - 51vw);
+    // margin: 0 calc(51% - 51vw);
     padding-left: 20px;
   }
   border: 1px solid rgba(128,128,128,0.1);
-  background-color: #1a1b21;
+  background-color: #161519;
   border-radius: 2px;
   padding: 10px;
   display: block;
@@ -42,6 +47,10 @@ pre.highlight, pre {
     line-height: 1.5;
     display: block;
     border: 0;
+    background: #161519;
+    color: #ff5277;
+    padding: 0;
+    border-radius: 0px;
   }
 }
 

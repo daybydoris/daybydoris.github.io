@@ -53,10 +53,11 @@ body[data-theme="dark"] {
     }
   }
 
-  // Syntax
-  code {
-    &.highlighter-rouge {
-      background-color: $dark-light;
+  // Codeblock Theme
+  pre.highlight, pre {
+    background-color: $dark-more-black;
+    code {
+      background: $dark-more-black;
     }
   }
 
@@ -111,7 +112,7 @@ body[data-theme="dark"] {
   // Blockquote
   blockquote {
     color: $dark-gray;
-    border-color: $dark-light;
+    border-color: $dark-text-link-blue;
   }
 
   // Strong, Bold
