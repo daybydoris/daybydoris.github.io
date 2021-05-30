@@ -32,10 +32,10 @@ collections:
     output: true
 
 # Markdown settings
-markdown: kramdown
+markdown: CommonMark
 highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
+# kramdown:
+#   syntax_highlighter: rouge
 
 # Default front matter
 defaults:
