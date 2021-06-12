@@ -55,9 +55,9 @@ body[data-theme="dark"] {
 
   // Codeblock Theme
   pre.highlight, pre {
-    background-color: $dark-more-black;
+    background-color: $dark-white;
     code {
-      background: $dark-more-black;
+      background: $dark-white;
     }
   }
 
@@ -111,8 +111,9 @@ body[data-theme="dark"] {
 
   // Blockquote
   blockquote {
-    color: $dark-gray;
+    color: #b2b2b2;
     border-color: $dark-text-link-blue;
+    background: $dark-light;
   }
 
   // Strong, Bold

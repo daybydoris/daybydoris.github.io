@@ -140,9 +140,13 @@ ul {
   li {
     display: list-item;
     text-align: -webkit-match-parent;
+
+    p {
+      display: inline-block;
+    }
   }
   li::before {
-    content: "\FE63";
+    content: "\FE45";
     display: inline-block;
     top: -1px;
     width: 1.2em;
@@ -158,6 +162,11 @@ ol {
   li {
     position: relative;
     counter-increment: li;
+
+    p {
+      display: inline-block;
+    }
+
     &::before {
       content: counter(li);
       display: inline-block;
@@ -255,14 +264,15 @@ em {
 
 // Blockquotes
 blockquote {
-  color: $gray;
+  color: $black;
   // font-style: italic;
   // text-align: center;
   opacity: 0.9;
+  background: rgb(248, 249, 250);
   // border-top: 1px solid $light;
   // border-bottom: 1px solid $light;
-  border-left: 5px solid $light;
-  padding: 10px;
+  border-left: 5px solid #ff5277;
+  padding: 20px 20px 20px 25px;
   // margin-left: 10px;
   // margin-right: 10px;
   font-size: 1em;
