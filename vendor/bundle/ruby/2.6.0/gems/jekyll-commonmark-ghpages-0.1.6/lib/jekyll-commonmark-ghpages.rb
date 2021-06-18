@@ -26,8 +26,8 @@ class JekyllCommonMarkCustomRenderer < ::CommonMarker::HtmlRenderer
 
   def code_block(node)
     lang = if node.fence_info && !node.fence_info.empty?
-             node.fence_info.split(/[\s,]/)[0]
-           end
+            node.fence_info.split(/[\s,]/)[0]
+          end
 
     content = node.string_content
 
@@ -68,8 +68,8 @@ class JekyllCommonMarkCustomRenderer < ::CommonMarker::HtmlRenderer
   end
 
   def basic_generate_id(str)
-    gen_id = str.gsub(/^[^a-zA-Z]+/, "")
-    gen_id.tr!("^a-zA-Z0-9 -", "")
+    gen_id = str.gsub(/^[^\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318Fa-zA-Z0-9]+/, "")
+    gen_id.tr!("^\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318Fa-zA-Z0-9 -", "")
     gen_id.tr!(" ", "-")
     gen_id.downcase!
     gen_id
