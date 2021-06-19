@@ -1,5 +1,3 @@
-# Today I Learned
+# Blog
 
-[TIL | graphicnovel](https://graphicnovel.github.io)
-
-오늘 배운 내용을 올리는 Repository입니다!
+[깨작깨작 | graphicnovel](https://graphicnovel.github.io)
