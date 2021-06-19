@@ -2,6 +2,7 @@
 title: Javascript Static 프로퍼티
 date: 2021-06-01 23:25:00 +09:00
 tags: [javascript]
+category: [posts]
 description: Javascript Static 프로퍼티
 ---
 
@@ -20,8 +21,9 @@ class Article {
   static publisher = "Ilya Kantor";
 }
 
-alert( Article.publisher ); // Ilya Kantor
+alert(Article.publisher); // Ilya Kantor
 ```
+
 <br><br>
 정적 프로퍼티로 선언하면 클래스 자체에 직접 할당하는 것과 동일하다.<br>
 
@@ -30,7 +32,3 @@ alert( Article.publisher ); // Ilya Kantor
 ```js
 Article.publisher = "Ilya Kantor";
 ```
-
-
-
-

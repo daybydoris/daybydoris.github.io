@@ -2,10 +2,21 @@
   url: /
   external: false
 
+- title: MIL
+  url: /categories/MIL/
+  external: false
+
+- title: posts
+  url: /categories/posts/
+  external: false
+
 - title: archive
   url: /archive/
   external: false
 
+- title: tags
+  url: /tags/
+  external: false
 # - title: about
 #   url: /about/
 #   external: false # set true if you using external link, see below

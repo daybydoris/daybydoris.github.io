@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
+    <article class="post-item">
+      <h4 class="post-item-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title | escape }}
+        </a>
+      </h4>
+      <span class="post-item-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+    </article>
+  {% endfor %}  

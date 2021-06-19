@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="categories">
+  <a class="category-item" href="#">all</a>
+  {%- for categories in site.categories -%} 
+    {% capture name %}{{ categories | first }}{% endcapture %}
+    <a class="category-item" href="/categories/{{name}}">{{ name }}</a> 
+  {%- endfor -%}
+</div>

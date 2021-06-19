@@ -48,7 +48,7 @@
         {%- assign menus = site.data.menus -%}
         {%- if menus %}
         {%- for menu in menus -%}
-        {%- if url == menu.url -%}
+        {%- if url == menu.url || url == menu.url -%}
         <a class="menu-link active" href="{{ menu.url }}">{{ menu.title }}</a>
         {%- else -%}
         {%- if menu.external -%}

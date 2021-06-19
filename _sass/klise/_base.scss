@@ -9,7 +9,7 @@
 
 .notransition {
   -webkit-transition: none;
-  -moz-transition: none; 
+  -moz-transition: none;
   -ms-transition: none;
   -o-transition: none;
   transition: none;
@@ -138,7 +138,8 @@ figcaption {
 ul {
   list-style: none;
   li {
-    display: list-item;
+    display: flex;
+    align-items: center;
     text-align: -webkit-match-parent;
 
     p {

@@ -217,7 +217,7 @@
 
 // Content
 .posts-item-note {
-  font-size: $base-font-size;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 5px;
   color: $black;
@@ -239,6 +239,7 @@
     color: $black;
     font-weight: 700;
     padding-right: 10px;
+    text-align: right;
 
     @include media-query($on-mobile) {
       font-size: 16px;
@@ -326,7 +327,6 @@
   }
 }
 
-
 .search-article {
   position: relative;
   margin-bottom: 50px;
@@ -377,4 +377,8 @@
     border: 1px solid rgba(128, 128, 128, 0.1);
     background-color: rgba(128, 128, 128, 0.1);
   }
+}
+
+.tag-title {
+  color: #e91e63 !important;
 }

@@ -1,5 +1,5 @@
 # Site settings
-title: TIL | graphicnovel # site title
+title: 깨작깨작 | graphicnovel # site title
 description: >- # site description
 lang: ko-KR # default lang
 timezone: Asia/Seoul # set your timezone
@@ -13,10 +13,10 @@ author:
   bio: >- # tell to the world
     by GraphicNovel <a href="https://github.com/graphicnovel/graphicnovel.github.io" target="_blank" rel="noopener">@github</a>.
   username: GraphicNovel # general username
-  github:  # github username
-  twitter:  # twitter username
-  facebook:  # facebook username
-  email:  # email adress
+  github: # github username
+  twitter: # twitter username
+  facebook: # facebook username
+  email: # email adress
   avatar: /assets/img/avatar.jpg # change with your own avatar
 
 # URL settings
