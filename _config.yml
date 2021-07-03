@@ -32,13 +32,13 @@ collections:
     output: true
 
 # Markdown settings
-markdown: CommonMarkGhPages
+markdown: kramdown
 commonmark:
   options: ["SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
-# highlighter: rouge
-# kramdown:
-#   syntax_highlighter: rouge
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 
 # Default front matter
 defaults:
