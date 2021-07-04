@@ -2,6 +2,7 @@
 title: 🐣 Jekyll 테마로 Github Pages 블로그 만들기
 date: 2021-04-10 17:27:00 +09:00
 tags: [github pages, jekyll]
+category: [posts]
 description: 마음에 드는 Jekyll 테마로 Github pages 블로그 만들기
 ---
 

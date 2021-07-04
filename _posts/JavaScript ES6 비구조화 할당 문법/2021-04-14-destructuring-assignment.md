@@ -2,6 +2,7 @@
 title: JavaScript ES6 비구조화 할당 문법
 date: 2021-04-14 21:10:00 +09:00
 tags: [javascript]
+category: [posts]
 description: JavaScript ES6의 비구조화 할당 문법에 대해 알아봅시다.
 ---
 
