@@ -11,7 +11,8 @@ description: 운영체제 개요
 
 # 운영체제의 구조
 
-![operating system structure](../images/os-structure.png)
+![operating system structure](https://user-images.githubusercontent.com/60416981/150637630-75b6017c-63bf-4570-9240-73a347160af7.png)
+
 
 <br>
 
@@ -35,7 +36,7 @@ description: 운영체제 개요
   - 어떤 프로세스가 먼저 도착하느냐에 따라 효율성이 달라짐.<br>
     
 
-  ![CPU Scheduling](../images/fcfs.png)
+  ![CPU Scheduling](https://user-images.githubusercontent.com/60416981/150637685-780fad9b-b67d-46c1-9802-eb1d6da3fcf4.png)
 
 
 
@@ -47,7 +48,7 @@ description: 운영체제 개요
 
   
 
-  ![SJF](../images/sjf.png)
+  ![SJF](https://user-images.githubusercontent.com/60416981/150637721-10e46419-303c-4df8-8a95-d22cf3e95986.png)
 
 
 
@@ -59,7 +60,7 @@ description: 운영체제 개요
   - 어떤 프로세스도 (n-1)*할당시간 이상 기다리지 않음
   - 프로세스의 사용시간이 긴 경우 계속 CPU 큐 뒤로 가서 줄을 서면 됨.<br>
 
-  ![Round Robin](../images/rr.png)
+  ![Round Robin](https://user-images.githubusercontent.com/60416981/150637734-e53d36bf-98f2-4c24-ad32-8516de3b3664.png)
 
 
 <br><br>
@@ -67,7 +68,7 @@ description: 운영체제 개요
 
 # 메모리 관리
 
-![메모리 관리](../images/memory-management.png)
+![메모리 관리](https://user-images.githubusercontent.com/60416981/150637754-1c86bccb-3807-4040-9c47-3e2561f8d26a.png)
 
 
 <br>
@@ -87,7 +88,7 @@ description: 운영체제 개요
 
 ## LRU vs. LFU
 
-![LRU vs. LFU](../images/lruvslfu.png)
+![LRU vs. LFU](https://user-images.githubusercontent.com/60416981/150640327-0de6e161-5b61-4a7d-847c-1b9114e7d62c.png)
 
 - 메모리에 프로세스가 꽉 찼을 경우 어떤 프로세스를 내보내고 새로운 프로세스를 할당할 것인가?
   - 과거를 보고 가까운 미래에 사용될 확률이 낮은 프로세스를 내보낸다.
@@ -103,7 +104,7 @@ description: 운영체제 개요
 
 > 먼저 요청이 들어온 순서대로 처리한다면, 디스크 헤드의 이동 거리가 길어진다.
 
-![디스크 스케줄링](../images/disk-scheduling.png)
+![디스크 스케줄링](https://user-images.githubusercontent.com/60416981/150640332-15f610ca-a85a-47a6-aad9-16efbf0c55cc.png)
 
 <br>
 
@@ -111,7 +112,7 @@ description: 운영체제 개요
 
 > Seek Time을 줄이고, 디스크 헤드의 이동거리를 줄여 효율성을 극대화하자
 
-![디스크 스케줄링의 목표](../images/disk-scheduling-2.png)
+![디스크 스케줄링의 목표](https://user-images.githubusercontent.com/60416981/150640345-5a7623c0-e687-4f56-ba8c-949fb3268b81.png)
 
 <br>
 
@@ -121,7 +122,7 @@ description: 운영체제 개요
 
 - 헤드의 이동거리가 길어 효율성이 떨어져 사용하지 않음!
 
-![FCFS](../images/disk-fcfs.png)
+![FCFS](https://user-images.githubusercontent.com/60416981/150640362-c1ed23d8-14fc-44ff-b926-17c71402eacc.png)
 
 <br>
 
@@ -131,7 +132,7 @@ description: 운영체제 개요
 
 - Starvation 문제 발생
 
-![SSTF](../images/disk-sstf.png)
+![SSTF](https://user-images.githubusercontent.com/60416981/150640370-d508cab8-91d4-4eba-a707-7286e58718ff.png)
 
 
 
@@ -144,7 +145,7 @@ description: 운영체제 개요
 - Starvation 문제가 발생하지 않음
 - 헤드의 이동 거리가 짧아짐
 
-![SCAN](../images/disk-scan.png)
+![SCAN](https://user-images.githubusercontent.com/60416981/150640376-17a2b67e-b574-410f-95b1-0093f04c944d.png)
 
 
 
@@ -158,7 +159,7 @@ description: 운영체제 개요
   - 처음에는 제일 밑 계층의 디스크에서  파일을 읽어오지만, 다시 요청한다면 중간 단계에 있는 복사본을 사용하면 되기 때문에 시간이 절약됨
   - 용량이 한정되어 있기 때문에 모든 정보를 복사해놓을 수는 없음
 
-![Caching](../images/caching.png)
+![Caching](https://user-images.githubusercontent.com/60416981/150640407-2d34f7f2-0baa-403f-869d-7131aa5da6d5.png)
 
 - Speed
   - 위로 올라갈수록 빠르고, 아래로 내려올수록 느림
@@ -175,7 +176,7 @@ description: 운영체제 개요
 
 ## 플래시메모리
 
-![플래시메모리](../images/flashmemory.png)
+![플래시메모리](https://user-images.githubusercontent.com/60416981/150640418-fbc7188e-4f4c-428c-979b-de60f3d59b72.png)
 
 - 플래시메모리의 단점
   - 데이터 변형이 일어날 가능성이 있음(시간이 지나면 전하가 조금씩 빠져나가므로)
