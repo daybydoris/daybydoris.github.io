@@ -1,0 +1,105 @@
+I"�(<h2 id="자바스크립트의-자동-형변환">자바스크립트의 자동 형변환</h2>
+
+<p>자바스크립트는 연산자를 사용할 때, 예상되는 데이터 형으로 값을 변환해 연산한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">2</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">-</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// 1</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">a</code>는 숫자, <code class="language-plaintext highlighter-rouge">b</code>는 문자인데 <code class="language-plaintext highlighter-rouge">a-b</code>의 결과는 <code class="language-plaintext highlighter-rouge">1</code>이 나온다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">-</code> 연산자는 숫자와 숫자를 빼는 경우에만 사용하므로, 숫자 타입이 올 것을 기대하고 있다.</p>
+
+<p>숫자에서 문자를 빼는 것은 <code class="language-plaintext highlighter-rouge">-</code> 연산자가 할 수 없는 일이므로, b를 숫자로 자동 형변환해 연산을 진행한다.</p>
+
+<h2 id="더하기-연산자">더하기(+) 연산자</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">number</span> <span class="o">+</span> <span class="nx">number</span><span class="p">;</span> <span class="c1">// number</span>
+<span class="nx">number</span> <span class="o">+</span> <span class="nx">string</span><span class="p">;</span> <span class="c1">// string</span>
+<span class="nx">string</span> <span class="o">+</span> <span class="nx">string</span><span class="p">;</span> <span class="c1">// string</span>
+<span class="nx">string</span> <span class="o">+</span> <span class="nx">boolean</span><span class="p">;</span> <span class="c1">// string</span>
+<span class="nx">number</span> <span class="o">+</span> <span class="nx">boolean</span><span class="p">;</span> <span class="c1">// number</span>
+
+<span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">점</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// 100점</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>문자열과 문자열을 concatenate (연결)</p>
+  </li>
+  <li>
+    <p>숫자와 숫자 더하기</p>
+  </li>
+  <li>
+    <p>숫자보다 문자열이 우선</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">a+b</code>는 숫자 + 문자열인데, 문자열이 우선되므로 <code class="language-plaintext highlighter-rouge">a</code>가 string으로 변환되고, 두 문자열이 concatenate 된다.</p>
+
+<h2 id="나머지-연산자-----">나머지 연산자 (-, *, /, %)</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">string</span> <span class="o">*</span> <span class="nx">number</span><span class="p">;</span> <span class="c1">// number</span>
+<span class="nx">string</span> <span class="o">*</span> <span class="nx">string</span><span class="p">;</span> <span class="c1">// number</span>
+<span class="nx">number</span> <span class="o">*</span> <span class="nx">number</span><span class="p">;</span> <span class="c1">// number</span>
+<span class="nx">string</span> <span class="o">*</span> <span class="nx">boolean</span><span class="p">;</span> <span class="c1">//number</span>
+<span class="nx">number</span> <span class="o">*</span> <span class="nx">boolean</span><span class="p">;</span> <span class="c1">//number</span>
+
+<span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">2</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// 2</span>
+</code></pre></div></div>
+
+<p>더하기 연산을 제외한 다른 연산자는 문자보다 숫자가 우선된다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">a</code>는 문자열 “2”, <code class="language-plaintext highlighter-rouge">b</code>는 boolean <code class="language-plaintext highlighter-rouge">true</code>인데 둘 다 숫자형으로 형변환 되어서 <code class="language-plaintext highlighter-rouge">a*b</code>는 2이다.</p>
+
+<h2 id="null과-undefined">null과 undefined</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="kc">null</span><span class="p">);</span> <span class="c1">// 1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">1</span><span class="dl">"</span> <span class="o">+</span> <span class="kc">null</span><span class="p">);</span> <span class="c1">// "1null"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="kc">null</span><span class="p">);</span> <span class="c1">// 1</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">1</span><span class="dl">"</span> <span class="o">/</span> <span class="kc">null</span><span class="p">);</span> <span class="c1">// Infinity</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">*</span> <span class="kc">null</span><span class="p">);</span> <span class="c1">// 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">%</span> <span class="kc">null</span><span class="p">);</span> <span class="c1">// NaN</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">null</span> <span class="o">+</span> <span class="kc">null</span><span class="p">);</span> <span class="c1">// 0</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">null</span> <span class="o">+</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// NaN</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// NaN</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">1</span><span class="dl">"</span> <span class="o">+</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// "1undefined"</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// NaN</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">1</span><span class="dl">"</span> <span class="o">/</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// NaN</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">*</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// NaN</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">%</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">// NaN</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">undefined</span> <span class="o">+</span> <span class="kc">undefined</span><span class="p">);</span> <span class="c1">//NaN</span>
+</code></pre></div></div>
+
+<ul>
+  <li>null
+    <ul>
+      <li>string과 함께 <code class="language-plaintext highlighter-rouge">+</code> 연산자를 만나면 string으로 형변환</li>
+      <li>나머지 경우는 number(0)으로 형변환</li>
+    </ul>
+  </li>
+  <li>undefined
+    <ul>
+      <li>string과 함께 <code class="language-plaintext highlighter-rouge">+</code> 연산자를 만나면 string으로 형변환</li>
+      <li>나머지 경우는 NaN</li>
+    </ul>
+
+    <p><br /></p>
+  </li>
+</ul>
+
+<h2 id="참조">참조</h2>
+
+<p><a href="https://medium.com/gdana/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%ED%98%95%EB%B3%80%ED%99%98%EC%9D%80-%EB%91%90%EA%B0%80%EC%A7%80%EB%8B%A4-b46875be4a88">자바스크립트의 형변환은 두가지다</a></p>
+
+<p><a href="https://okky.kr/article/536672">자바스크립트) undefined와 null의 +연산자에 대하여..</a></p>
+:ET

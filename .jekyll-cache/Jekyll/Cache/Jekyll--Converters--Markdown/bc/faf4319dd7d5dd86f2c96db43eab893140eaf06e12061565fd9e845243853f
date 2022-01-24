@@ -1,0 +1,31 @@
+I"H	<h2 id="1-feature-따서-작업하기">1. feature 따서 작업하기</h2>
+
+<p>최신 develop에서 feature 따기</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span> <span class="nx">git</span> <span class="nx">checkout</span> <span class="nx">develop</span> <span class="c1">// develop으로 이동</span>
+<span class="nx">$</span> <span class="nx">git</span> <span class="nx">checkout</span> <span class="o">-</span><span class="nx">b</span> <span class="dl">"</span><span class="s2">feature/브랜치 이름</span><span class="dl">"</span> <span class="c1">// 새 feature 브랜치를 만들고 이동</span>
+</code></pre></div></div>
+
+<p>~ 작업 ~</p>
+
+<h2 id="2-feature를-develop에-merge하기">2. feature를 develop에 merge하기</h2>
+
+<p>작업 끝나면 <strong>develop</strong>에 PR 날려서 merge함.</p>
+
+<p>master가 default로 되어있어서 자꾸 master에 pr 날리는데,,,</p>
+
+<p>default를 바꿔도 되는지 모르겠음.</p>
+
+<p>develop 최신화 해줌</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span> <span class="nx">git</span> <span class="nx">checkout</span> <span class="nx">develop</span> <span class="c1">// develop으로 이동</span>
+<span class="nx">$</span> <span class="nx">git</span> <span class="nx">pull</span> <span class="nx">origin</span> <span class="nx">develop</span> <span class="c1">// merge한 것을 pull 받음</span>
+</code></pre></div></div>
+
+<h2 id="3-develop에서-pull-받고-master에-배포하기">3. develop에서 pull 받고 master에 배포하기</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span> <span class="nx">git</span> <span class="nx">checkout</span> <span class="nx">master</span> <span class="c1">// master로 이동</span>
+<span class="nx">$</span> <span class="nx">git</span> <span class="nx">pull</span> <span class="nx">origin</span> <span class="nx">develop</span> <span class="c1">// 최신화 된 develop을 pull 받음</span>
+<span class="nx">$</span> <span class="nx">git</span> <span class="nx">push</span> <span class="nx">origin</span> <span class="nx">master</span> <span class="c1">// master에 push</span>
+</code></pre></div></div>
+:ET
