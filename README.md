@@ -1,3 +1,3 @@
-# Blog
-[Young.log](graphicnovel.github.io/)
+# My Blog
+[Young.log](https://graphicnovel.github.io/)
 
